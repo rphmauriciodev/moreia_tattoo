@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    /* height: 4000px; */
+    margin-top: 200px;
+    background-image: url(/IMG/Background.png);
+    background-color: black;
+    color: white;
+    font-family: 'RobotoLight';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.galeria h1{
+    font-size: 4.5em;
+    margin: 3%;
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 90vw;
+    width: 90%;
+    background-color: #121212;
+    align-items: center;
+}
+.fotos{
+    border-radius: 12px;
+    height: 95%;
+    width: 95%;
+    border: 2px solid #eee;
+}

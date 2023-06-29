@@ -25,6 +25,9 @@ moreia.use(bp.json())
 moreia.get('/', function(req,res){
     res.render('inicio');
 })
+moreia.get('/galeria', function(req,res){
+    res.render('galeria');
+})
 moreia.get('/sobreNos', function(req,res){
     res.render('sobreNos');
 })

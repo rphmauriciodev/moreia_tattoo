@@ -26,6 +26,9 @@ function mostrarRef_ilus(){
 function sobreNos(){
     window.location.href = "/sobreNos";
 }
+function galeria(){
+    window.location.href = "/galeria";
+}
 function inicio(){
     window.location.href = "/";
 }
