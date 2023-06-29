@@ -1,0 +1,89 @@
+<head><link rel="stylesheet" href="/CSS/inicio.css"></head>
+<body>
+    <div class="inicio">
+        <div class="apresentacao">
+        <h1>Bem-vindo ao site do <br>MORÉIA TATTOO STUDIO.</h1>
+        <h2>Para te ajudar nós preparamos um formulário<br>Selecione abaixo a opção desejada:</h2>
+    </div>
+     <div class="opcoes">
+     <ul>
+        <li><button class="btnn btnn1" id="tatuagem"><a href="#tattooform">Tatuagem</a></button></li>
+        <li><button class="btnn btnn2" id="ilustracao"><a href="#ilustracaoform">Ilustração</a></button></li>
+        <li><button class="btnn btnn2" id="piercing"><a href="#piercingform">Piercing</a></button></li>
+     </ul>
+    </div>
+    </div>
+      <div class="forms">
+        <form id="tattooform" action="">
+                <h1>Formulário de Tatuagem</h1>
+                <section id="linha"></section>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                <label for="tamanho">Tamanho da tatuagem: </label>
+                <input type="text" name="tamanho" id="tamanho" placeholder="Tamanho em centímentros (Ex: 5)">
+                <label for="regiao">Região a ser tatuada: </label>
+                <input type="text" name="regiao" id="regiao" placeholder="Região: (Ex: Antebraço)">
+                <label for="foto">Nos envie uma foto da região que deseja tatuar </label>
+                <button class="foto"><input type="file" name="foto" id="foto" accept="image/*"></button>
+                <label for="ref">Gostaria de enviar alguma referência que auxilie no processo?</label>
+                <select name="ref" id="ref" onclick="mostrarRef()">
+                        <option value="Não">Não</option>
+                        <option value="Sim">Sim</option>
+                </select>
+                <button class="foto_ref" id="foto_ref"><input type="file" name="foto_ref" id="foto_ref" accept="image/*"></button>
+                <label for="data2">Qual data você deseja realizar a tatuagem?</label>
+                <input type="date" name="data" id="data">
+                <label for="contato">Telefone para contato:</label>
+                <input type="tel" name="contato" id="contato" placeholder="Telefone (Somente números)">
+                <label for="email">Digite seu email:</label>
+                <input type="email" name="email" id="email" placeholder="cliente@email.com">
+                <div class="enviar"><button type="submit" class="btn btn5">Enviar</button></div>
+        </form>
+        <form id="ilustracaoform" action="">
+                <h1>Formulário de Ilustração</h1>
+                <section id="linha"></section>
+                <label for="nome1">Nome: </label>
+                <input type="text" name="nome1" id="nome1" placeholder="Digite o seu nome">
+                <label for="tipo_ilus">Selecione o tipo de Ilustração:</label>
+                <select name="tipo_ilus" id="tipo_ilus">
+                        <option value="">--Tipos de ilustração--</option>
+                        <option value="Personagem (Busto)">Personagem (Busto)</option>
+                        <option value="Personagem (Corpo completo)">Personagem (Corpo completo)</option>
+                        <option value="Character design">Character design</option>
+                        <option value="Cenário">Cenário</option>
+                        <option value="Concept Art">Concept Art</option>
+                        {{!-- <option value="NSFW" id="nsfw">NSFW</option> --}}
+                </select>
+                <label for="desc_ilus">Descrição da ilustração: </label>
+                <textarea name="desc_ilus" id="desc_ilus" cols="80" rows="6"></textarea>
+                <label for="ref_ilus">Gostaria de enviar alguma referência que auxilie no processo?</label>
+                <select name="ref_ilus" id="ref_ilus" onclick="mostrarRef_ilus()">
+                        <option value="Não">Não</option>
+                        <option value="Sim">Sim</option>
+                </select>
+                <button class="foto_ref_ilus" id="foto_ref_ilus"><input type="file" name="foto_ref1" id="foto_ref1" accept="image/*"></button>
+                <label for="contato1">Telefone para contato:</label>
+                <input type="tel" name="contato1" id="contato1" placeholder="Telefone (Somente números)">
+                <label for="email1">Digite seu email:</label>
+                <input type="email" name="email1" id="email1" placeholder="cliente@email.com">
+                <div class="enviar"><button type="submit" class="btn btn5">Enviar</button></div>
+        </form>
+        <form id="piercingform" action="">
+                <h1>Formulário de Piercing</h1>
+                <section id="linha"></section>
+                <label for="nome2">Nome: </label>
+                <input type="text" name="nome2" id="nome2" placeholder="Digite o seu nome">
+                <label for="perfuracao">Qual perfuração você deseja? (Obs: Não realizamos perfuração íntima)</label>
+                <input type="text" name="perfuracao" id="perfuracao" placeholder="Digite aqui o tipo de perfuração que você deseja">
+                <label for="regiao">Região a ser perfurada: </label>
+                <input type="text" name="regiao_piercing" id="regiao_piercing" placeholder="Região: (Ex: Cartilagem)">
+                <label for="foto2">Nos envie uma foto da região que deseja perfurar </label>
+                <button class="foto2"><input type="file" name="foto" id="foto" accept="image/*"></button>
+                <label for="data2">Qual data você deseja realizar a perfuração?</label>
+                <input type="date" name="data2" id="data2">
+                <label for="contato2">Telefone para contato:</label>
+                <input type="tel" name="contato2" id="contato2" placeholder="Telefone (Somente números)">
+                <div class="enviar"><button type="submit" class="btn btn5">Enviar</button></div>
+        </form>
+      </div>
+</body>

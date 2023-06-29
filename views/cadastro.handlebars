@@ -1,0 +1,43 @@
+<head><link rel="stylesheet" href="/CSS/cadastro.css"></head>
+<body>
+    <div class="formCadastro">
+        <div class="cadastro">
+            <div class="bloco">
+                <div class="cabecalhoCad">
+                    <div class="moreia">
+                    <img src="/IMG/Moreia_LOGO.png" alt="logo">
+                </div>
+                <div class="tituloCad">
+                    <h1>Formulário de Cadastro</h1>
+                    <h2>Preencha o formulário para realizar seu cadastro</h2>
+                </div>
+                <div class="moreia">
+                    <img src="/IMG/Moreia_LOGO.png" alt="logo">
+                </div>
+                </div>
+            <form class="cadastroForm" action="/dados" method="post" onsubmit="return validaCadastro()">
+            <fieldset>
+                <label for="nome">Nome completo: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <label for="user">Nome de usuário: </label>
+                <input type="text" name="user" id="user" placeholder="Digite seu usuário">
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <label for="confSenha">Confirmação de senha: </label>
+                <input type="password" name="confSenha" id="confSenha" placeholder="Confirme sua senha">
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                <label for="confEmail">Confirmação de e-mail: </label>
+                <input type="email" name="confEmail" id="confEmail" placeholder="Confirme seu e-mail">
+                <label for="telefone">Digite seu telefone (Somente números): </label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(XX)XXXXX-XXXX">
+                <div class="cadastrar">
+                    <button type="submit" class="btn btn5">Cadastrar</button>
+                </div>
+                <input type="button" value="Já possui cadastro? fazer login!" class="loginIr" onclick="login()">
+            </fieldset>
+        </div>
+        </form>
+    </div>
+ </div>
+</body>
